@@ -1,0 +1,8 @@
+{
+  "name": "Morning Star Hospital",
+  "description": "Morning Star Hospital HMS - Your Health is our PRIORITY - 24 Hours Service Everyday",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

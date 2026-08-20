@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morning Star Hospital HMS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      .glass {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+
+      /* Print Specific Styles */
+      @media print {
+        @page {
+          size: A4 portrait;
+          margin: 10mm 12mm;
+        }
+        header, aside, .no-print, button, .sidebar-trigger, .no-print * {
+          display: none !important;
+        }
+        main {
+          margin: 0 !important;
+          padding: 0 !important;
+          width: 100% !important;
+        }
+        .print-only {
+          display: block !important;
+        }
+        body {
+          background-color: white !important;
+          color: black !important;
+        }
+        #root {
+          padding: 0 !important;
+        }
+        .custom-scrollbar {
+          overflow: visible !important;
+          max-height: none !important;
+        }
+        .print-break-inside-avoid {
+          break-inside: avoid !important;
+          page-break-inside: avoid !important;
+        }
+        .print-container {
+          position: static !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          box-shadow: none !important;
+          border: none !important;
+          border-radius: 0 !important;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="/index.css">
+  </head>
+  <body class="bg-[#F8FAFC] text-slate-900 antialiased">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
